@@ -4,6 +4,7 @@ import { useState } from "react";
 import { fetchRepos } from "./fetch-repos";
 import { languages } from "./languages";
 import type { Repository } from "./repository-response";
+
 interface ViewTrendingRepositoriesProps {
   language: string;
 }
@@ -84,7 +85,7 @@ export function ViewTrendingRepositories(props: ViewTrendingRepositoriesProps) {
               <Action.CopyToClipboard
                 title="Copy Author"
                 content={repository.owner.login}
-                shortcut={{ key: "o", modifiers: ["cmd"] }}
+                shortcut={{ key: "a", modifiers: ["cmd"] }}
               />
             </ActionPanel>
           }
